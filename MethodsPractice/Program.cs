@@ -57,7 +57,7 @@ string OddSum(int n, int m)
                 oddSum += i;
             }
         }
-        return $"{m} ve {n} ededleri arasindaki tek ededlerin cemi {oddSum} olur";
+        return $"{n} ve {m} ededleri arasindaki tek ededlerin cemi {oddSum} olur";
     }
     return $"1-ci eded 2-ci ededden kicikdir";
 }
