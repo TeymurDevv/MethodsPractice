@@ -44,3 +44,24 @@ string OddCounter(int n, int m)
 string oddCounterResult = OddCounter(10, 15);
 Console.WriteLine(oddCounterResult);
 #endregion
+#region task4
+string OddSum(int n, int m)
+{
+    int oddSum = default(int);
+    if (m > n)
+    {
+        for (int i = n; i <= m; i++)
+        {
+            if (i % 2 == 1)
+            {
+                oddSum += i;
+            }
+        }
+        return $"{m} ve {n} ededleri arasindaki tek ededlerin cemi {oddSum} olur";
+    }
+    return $"1-ci eded 2-ci ededden kicikdir";
+}
+string oddSumResult = OddSum(10, 15);
+Console.WriteLine(oddSumResult);
+#endregion
+
