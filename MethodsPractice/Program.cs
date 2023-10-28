@@ -10,7 +10,6 @@ string Divide(int n)
 string divideResult = Divide(21);
 Console.WriteLine(divideResult);
 #endregion
-
 #region task2
 string evenSum(int n, int m)
 {
@@ -24,4 +23,24 @@ string evenSum(int n, int m)
 string evenSumResult = evenSum(2, 5);
 Console.WriteLine(evenSumResult);
 
+#endregion
+#region task3
+string OddCounter(int n, int m)
+{
+    int odd= default(int);
+    if (m>n)
+    {
+        for (int i = n; i <= m; i++)
+        {
+            if (i%2==1)
+            {
+                odd++;
+            }
+        }
+        return $"{m} ve {n} ededleri arasinda {odd} sayda tek eded var";
+    }
+    return $"1-ci eded 2-ci ededden kicikdir";
+}
+string oddCounterResult = OddCounter(10, 15);
+Console.WriteLine(oddCounterResult);
 #endregion
