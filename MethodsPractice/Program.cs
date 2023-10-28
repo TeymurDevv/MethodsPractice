@@ -5,11 +5,8 @@ string Divide(int n)
     {
         return $"{n} Ededi hem 3 e hem 7 ye bolunur";
     }
-    else
-    {
-        return $"{n} Ededi hem 3 e hem 7 ye bolunmur";
-    }
+    return $"{n} Ededi hem 3 e hem 7 ye bolunmur";
 }
-string divideResult = Divide(28);
+string divideResult = Divide(21);
 Console.WriteLine(divideResult);
 #endregion
